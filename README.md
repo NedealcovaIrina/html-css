@@ -1,1 +1,2 @@
-# Tekwill_FE_gr11
+# Tekwill-academy
+Этот проект является примером использования синтаксиса Markdown.
