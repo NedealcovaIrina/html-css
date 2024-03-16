@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="link_for_form" method="post">
+        <fieldset>
+            <legend>Basic User Information:</legend>
+            <label for="full_name"> Full name:</label>
+            <input type="text" id="text" name="Text"> 
+            <br>
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="Email">
+            <br>
+            <label for="password"> Password:</label>
+            <input type="password" id="password" name="Password">
+            <br>
+            <label for="password"> Confirm password:</label>
+            <input type="password" id="password" name="Password">
+            <br>
+            <label for="gender"> Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+            <br>
+            <label for="date"> Date of Birth:</label>
+            <input type="date" id="date" name="Date">
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Information:</legend>
+            <label for="str_address"> Street Addres:</label>
+            <textarea name="Street Address" id="address" cols="25" rows="2">
+            </textarea>
+            <br>
+            <label for="country"> Country:</label>
+            <select id="country" name="Country" size="1">
+              <option value="usa">USA</option>
+              <option value="germany">Germany</option>
+              <option value="russia">Russia</option>
+              <option value="italy">Italy</option>
+              <option value="moldova">Moldova</option>
+            </select>
+            <br>
+            <label for="city"> City:</label>
+            <input type="text" id="city" name="City">
+            <br>
+            <label for="post_code"> Postal Code:</label>
+            <input type="number" id="post_code" name="PostalCode">
+        </fieldset>
+      
+    </form>
+</body>
+</html>
