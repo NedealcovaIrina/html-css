@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="link_for_form" method="post">
         <fieldset>
             <legend>Basic User Information:</legend>
             <label for="full_name"> Full name:</label>
-            <input type="text" id="text" name="Text"> 
+            <input type="text" id="text" name="Text">
             <br>
             <label for="email"> Email:</label>
             <input type="email" id="email" name="Email">
@@ -38,11 +40,11 @@
             <br>
             <label for="country"> Country:</label>
             <select id="country" name="Country" size="1">
-              <option value="usa">USA</option>
-              <option value="germany">Germany</option>
-              <option value="russia">Russia</option>
-              <option value="italy">Italy</option>
-              <option value="moldova">Moldova</option>
+                <option value="usa">USA</option>
+                <option value="germany">Germany</option>
+                <option value="russia">Russia</option>
+                <option value="italy">Italy</option>
+                <option value="moldova">Moldova</option>
             </select>
             <br>
             <label for="city"> City:</label>
@@ -51,7 +53,30 @@
             <label for="post_code"> Postal Code:</label>
             <input type="number" id="post_code" name="PostalCode">
         </fieldset>
-      
+        <fieldset>
+            <legend>Preferences:</legend>
+            <label for="pref_cont_meth"> Preferred Contact Method:</label>
+            <input type="checkbox" id="Email" name="Email">Email
+            <input type="checkbox" id="Phone" name="Phone">Phone
+            <input type="checkbox" id="Postal Mail" name="Postal Mail">Postal Mail
+            <br>
+            <label for="fav_col"> Favorite Color:</label>
+            <input type="color" id="Favorite Color" name="Favorite Color">
+        </fieldset>
+        <fieldset>
+            <legend>Additional Details:</legend>
+            <label for="how"> How did you hear about us?</label>
+            <select id="how" name="how" size="1">
+                <option value="Internet">Internet</option>
+                <option value="Friend">Friend</option>
+                <option value="Advertisement">Advertisement</option>
+            </select>
+            <br>
+            <label for="feedb_comm"> Feedback/Comments:</label>
+            <textarea name="Feedback/Comments" id="Feedback/Comments" cols="25" rows="2">
+            </textarea>
+        </fieldset>
     </form>
 </body>
+
 </html>
