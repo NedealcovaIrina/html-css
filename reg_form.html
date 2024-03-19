@@ -11,35 +11,39 @@
     <form action="link_for_form" method="post">
         <fieldset>
             <legend>Basic User Information:</legend>
-            <label for="full_name"> Full name:</label>
-            <input type="text" id="Full name" name="Full name" required>
+            <label for="Fullname"> Full name:</label>
+            <input type="text" id="Fullname" name="Fullname" required>
             <br>
-            <label for="email"> Email:</label>
-            <input type="email" id="email" name="Email"required>
+            <label for="Email"> Email:</label>
+            <input type="email" id="Email" name="Email" required>
             <br>
-            <label for="password"> Password:</label>
-            <input type="password" id="password" name="Password"required>
+            <label for="Password"> Password:</label>
+            <input type="password" id="Password" name="Password" required>
             <br>
-            <label for="password"> Confirm password:</label>
-            <input type="password" id="password" name="Password">
+            <label for="Confirmpassword"> Confirm password:</label>
+            <input type="password" id="Confirmpassword" name="Confirmpassword">
             <br>
-            <label for="gender"> Gender:</label>
-            <input type="radio" name="gender" value="male">Male
-            <input type="radio" name="gender" value="female">Female
-            <input type="radio" name="gender" value="other">Other
+            <label for="Gender1"> Gender:</label>
+            <input type="radio" id="Gender1" name="Gender" value="male">Male
+            <label for="Gender2"></label>
+            <input type="radio" id="Gender2" value="female">Female
+            <label for="Gender3"></label>
+            <input type="radio" id="Gender3" value="mechanic">My gender...I'm a mechanic
+            <label for="Gender4"></label>
+            <input type="radio" id="Gender4" value="other">Other
             <br>
-            <label for="date"> Date of Birth:</label>
-            <input type="date" id="date" name="Date">
+            <label for="DateofBirth"> Date of Birth:</label>
+            <input type="date" id="DateofBirth" name="DateofBirth">
         </fieldset>
 
         <fieldset>
             <legend>Address Information:</legend>
-            <label for="str_address"> Street Addres:</label>
-            <textarea name="Street Address" id="address" cols="25" rows="2">
+            <label for="StreetAddress"> Street Addres:</label>
+            <textarea name="StreetAddress" id="StreetAddress" cols="25" rows="2">
             </textarea>
             <br>
-            <label for="country"> Country:</label>
-            <select id="country" name="Country" size="1">
+            <label for="Country"> Country:</label>
+            <select id="Country" name="Country" size="1">
                 <option value="usa">USA</option>
                 <option value="germany">Germany</option>
                 <option value="russia">Russia</option>
@@ -47,45 +51,48 @@
                 <option value="moldova">Moldova</option>
             </select>
             <br>
-            <label for="city"> City:</label>
-            <input type="text" id="city" name="City">
+            <label for="City"> City:</label>
+            <input type="text" id="City" name="City">
             <br>
-            <label for="post_code"> Postal Code:</label>
-            <input type="number" id="post_code" name="PostalCode">
+            <label for="PostalCode"> Postal Code:</label>
+            <input type="number" id="PostalCode" name="PostalCode">
         </fieldset>
         <fieldset>
             <legend>Preferences:</legend>
-            <label for="pref_cont_meth"> Preferred Contact Method:</label>
-            <input type="checkbox" id="Email" name="Email">Email
-            <input type="checkbox" id="Phone" name="Phone">Phone
-            <input type="checkbox" id="Postal Mail" name="Postal Mail">Postal Mail
+            <label for="PreferredContactMethod1"> Preferred Contact Method:</label>
+            <input type="checkbox" id="PreferredContactMethod1" name="Email">Email
+            <label for="PreferredContactMethod2"></label>
+            <input type="checkbox" id="PreferredContactMethod2" name="Phone">Phone
+            <label for="PreferredContactMethod3"></label>
+            <input type="checkbox" id="PreferredContactMethod3" name="PostalMail">Postal Mail
             <br>
-            <label for="fav_col"> Favorite Color:</label>
-            <input type="color" id="Favorite Color" name="Favorite Color">
+            <label for="FavoriteColor"> Favorite Color:</label>
+            <input type="color" id="FavoriteColor" name="FavoriteColor">
         </fieldset>
         <fieldset>
             <legend>Additional Details:</legend>
-            <label for="how"> How did you hear about us?</label>
-            <select id="how" name="how" size="1">
+            <label for="How_did_you_hear_about_us"> How did you hear about us?</label>
+            <select id="How_did_you_hear_about_us" name="How_did_you_hear_about_us" size="1">
                 <option value="Internet">Internet</option>
                 <option value="Friend">Friend</option>
                 <option value="Advertisement">Advertisement</option>
             </select>
             <br>
-            <label for="feedb_comm"> Feedback/Comments:</label>
-            <textarea name="Feedback/Comments" id="Feedback/Comments" cols="25" rows="2">
+            <label for="FeedbackComments"> Feedback/Comments:</label>
+            <textarea name="FeedbackComments" id="FeedbackComments" cols="25" rows="2">
             </textarea>
         </fieldset>
         <fieldset>
             <legend> Profile:</legend>
-            <label for="upl_prof_pictr"> Upload a Profile Picture:</label>
-            <input type="file" id="Picture" name="Picture" accept=".jpg" accept=".png">
+            <label for="UploadProfilePicture"> Upload a Profile Picture:</label>
+            <input type="file" id="UploadProfilePicture" name="UploadProfilePicture" accept=".jpg, .png">
             <br>
-            <label for="url"> Webside URL:</label>
-            <input type="url" id="Webside URL" name="Webside URL">
+            <label for="WebsideURL"> Webside URL:</label>
+            <input type="url" id="WebsideURL" name="WebsideURL">
             <br>
-            <label for="level">Experience Level with HTML:</label>
-            <input type="range" name="level" id="level" min="0" max="10" value="5" oninput="displayValue.value=level.value">
+            <label for="Experience_Level_HTML">Experience Level with HTML:</label>
+            <input type="range" name="Experience_Level_HTML" id="Experience_Level_HTML" min="0" max="10" value="5"
+                oninput="displayValue.value=level.value">
             <output id="displayValue">5</output>/10
         </fieldset>
         <input type="submit">
