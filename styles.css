@@ -1,0 +1,14 @@
+#zagolovok {
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: underline;    
+}
+
+p {
+    color: brown;
+}
+
+.klass {
+    color: rgb(2, 80, 50);
+}
+
