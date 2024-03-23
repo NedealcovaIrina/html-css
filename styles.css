@@ -1,4 +1,4 @@
-#zagolovok {
+#title {
     color: blue;
     text-transform: uppercase;
     text-decoration: underline;    
@@ -8,7 +8,7 @@ p {
     color: brown;
 }
 
-.klass {
+.colored-paragraf {
     color: rgb(2, 80, 50);
 }
 
