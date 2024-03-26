@@ -1,14 +1,66 @@
 #title {
     color: blue;
     text-transform: uppercase;
-    text-decoration: underline;    
+    text-decoration: underline;
 }
 
 p {
-    color: brown;
+    color: rgb(1, 8, 56);
 }
 
 .colored-paragraf {
-    color: rgb(2, 80, 50);
+    color: rgb(0, 39, 195);
 }
+
+a:hover {
+    color: rgb(7, 96, 39);
+    text-decoration: underline;
+}
+
+body {
+    font-size: 20pt;
+}
+
+h2:first-of-type {
+    color: rgb(0, 102, 22);
+}
+
+ol.first-class li:nth-child(even) {
+color:rgb(255, 0, 170);
+}
+
+ul.second-class li:nth-last-child(2) {
+    color:rgb(179, 3, 82);
+}
+
+.header {
+    font-size: 3rem;
+}
+
+.paragraf {
+    font-size: 1em;
+}
+
+li.nav_bar {
+    display: block;
+
+}
+
+li.nav_bar::before {
+    content: "*";
+}
+
+li.nav_bar::after {
+    content: "*";
+}
+
+h1 {
+    background-color: rgba(127, 255, 212, 0.273);
+}
+
+img.class-image {
+    width: clc(50% + 150px) ;
+}
+
+
 
