@@ -1,0 +1,110 @@
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  border: 4px solid #49009c;
+  padding: 100px;
+  margin: 30px;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards 1s;
+}
+
+.trigger {
+  position: relative;
+  padding: 5px 10px;
+  border: 1px solid #f40000;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.trigger::after {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+  transition: visibility 0s, opacity 0.3s linear;
+  opacity: 0;
+}
+
+.trigger::before {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  z-index: 11;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  transition: visibility 0s, opacity 0.3s linear;
+  opacity: 0;
+  left: 50%;
+  margin-left: -5px;
+  bottom: 100%;
+  transform: translateY(4px);
+}
+
+.trigger:hover::after,
+.trigger:hover::before {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.trigger-right::after {
+  bottom: 50%;
+  right: 100%;
+  left: auto;
+  transform: translateY(50%) translateX(-10px);
+}
+
+.trigger-right::before {
+  top: 50%;
+  right: 100%;
+  margin-top: 0px;
+  border-color: transparent transparent transparent #555;
+  transform: translateY(-50%) translateX(-61px);
+}
+
+.trigger-bottom::after {
+  bottom: -70%;
+  right: -5%;
+  left: auto;
+  transform: translateY(50%) translateX(-10px);
+}
+
+.trigger-bottom::before {
+  top: 100%;
+  border-color: transparent transparent #555 transparent;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.trigger-left::after {
+  bottom: 50%;
+  left: 100%;
+  transform: translateY(50%) translateX(6px);
+}
+
+.trigger-left::before {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent #555 transparent transparent;
+  transform: translateY(20%) translateX(2px);
+}
