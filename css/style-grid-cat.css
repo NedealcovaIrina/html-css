@@ -1,0 +1,143 @@
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+.top { grid-area: header; }
+.left { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.bottom { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main main right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  overflow: hidden;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+}
+.top {
+    word-spacing: 10px;
+    font-size: large;
+}
+.left {
+    width: 100px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    overflow: hidden;    
+}
+
+.main > * { 
+    box-sizing: border-box; 
+}
+
+.image {
+    width: 100%;  
+    height: 100%;      
+    object-fit: cover;
+     
+ }
+
+ .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Общие стили для наложения */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: rgb(255, 255, 255);
+    pointer-events: none; /* Чтобы не мешать взаимодействию с ссылками/кнопками под надписью */
+  }
+  
+  /* Стили для наведения */
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Стили для котиков */
+  .overlay-cat {
+    background-color: rgba(0, 0, 0, 0.7); /* Черный полупрозрачный фон */
+    height: 30%; /* Высота надписи относительно изображения */
+  }
+
+ .main .cat-one { grid-area: 1 / 1 / span 2 / span 2; }
+ .main .cat-two { grid-area: 1 / 3 / span 1 / span 1; }
+ .main .cat-three { grid-area: 4 / 1 / span 1 / span 1; }
+ .main .cat-four { grid-area: 4 / 2 / span 1 / span 1; }
+ .main .cat-five { grid-area: 2 / 3 / span 2 / span 1; }
+ .main .cat-six { grid-area: 3 / 1 / span 1 / span 1; }
+ .main .cat-seven { grid-area: 3 / 2 / span 1 / span 1; }
+ .main .cat-eight { grid-area: 4 / 3 / span 1 / span 1; }
+
+a {
+    color: #5da9e8;;
+}
+
+a:hover {
+    color: rgb(246, 7, 7);
+}
+
+a.menu-links {
+    text-decoration: none;    
+}
+
+ul {
+    text-align: left;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.right {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    overflow: hidden;    
+}
+
+.right > img { 
+    box-sizing: border-box; 
+    width: 100%;  
+    height: 100%;     
+    object-fit: cover;    
+}
+
+.right .dog-one { grid-area: 1 / 1; }
+.right .dog-two { grid-area: 2 / 1; }
+.right .dog-three { grid-area: 3 / 1; }
+.right .dog-four { grid-area: 4 / 1; }
+
